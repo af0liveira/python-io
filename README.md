@@ -14,7 +14,6 @@ The code implements methods for:
 
     - The class is implemented in `contact.py` a an object with attributes `id`, `name`, and `email`
 
-
 3. Serializing and deserializing the contacts list using `pickle`
 
 4. Serializing and deserializing the contacts list using JSON
