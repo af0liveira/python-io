@@ -1,6 +1,10 @@
 """Module with tools for managing Contact objects."""
+
 import csv
+import pickle
+
 from contact import Contact
+
 
 def csv_to_contacts(csv_path, encoding='latin_1'):
     """Converts a contact list from CSV to a list of Contact objects."""
@@ -16,11 +20,19 @@ def csv_to_contacts(csv_path, encoding='latin_1'):
 
     return contacts
 
-def contacts_to_pickle():
-    raise NotImplementedError(f"Function {__name__} hasn't been implemented yet.")
+def contacts_to_pickle(contacts, filepath):
+    """Serialize a list of Contact objects to a pickle file."""
 
-def pickle_to_contacts():
-    raise NotImplementedError(f"Function {__name__} hasn't been implemented yet.")
+    with open(filepath, 'wb') as fp:
+        pickle.dump(contacts, fp)
+
+def pickle_to_contacts(filepath):
+    """Deserialize a contacts list from a pickle file."""
+
+    with open(filepath, 'rb') as fp:
+        contacts = pickle.load(fp)
+
+    return contacts
 
 def contacts_to_json():
     raise NotImplementedError(f"Function {__name__} hasn't been implemented yet.")
