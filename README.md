@@ -18,4 +18,19 @@ The code implements methods for:
 
 4. Serializing and deserializing the contacts list using JSON
 
+## Repository organization
+
+The repository is organized as follows
+
+```txt
+./
+|-- README.md       : this file
+|-- main.py         : main program; run with `python3 main.py`
+|-- contact.py      : implements the `Contact` class
+|-- contact_utils.py    : implements the methods for handling `Contact` objects
+`-- data/           : input and output files
+    |-- contacts.csv    : contacts list in CSV format
+    `-- contacts.json   : contacts list in JSON format
+```
+
 ---
