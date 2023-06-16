@@ -3,5 +3,5 @@ class Contact:
 
     def __init__(self, id, name, email):
         self.id = id
-        self.nome = name
+        self.name = name
         self.email = email
