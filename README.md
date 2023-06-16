@@ -33,4 +33,21 @@ The repository is organized as follows
     `-- contacts.json   : contacts list in JSON format
 ```
 
+## Running the code
+
+To run the code, simply execute the file `main.py` with a Python 3 interpreter.
+
+```sh
+python3 main.py
+```
+
+The code was written for study purposes.
+All it should do is read the `data/contacts.csv` file and save its contents back in pickle and JSON formats as `data/contacts.p` and `data/contacts.json`.
+It then proceeds to read the pickle and JSON files and print their contents on the screen.
+
+**Warning**
+
+Make sure you trust the content of pickle files before opening them.
+Since they'll restore Python objects, it's fairly easy to insert malicious code into them.
+
 ---
